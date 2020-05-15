@@ -63,7 +63,6 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    font-size: 1.2em;
 }
 
 input:invalid,
@@ -122,6 +121,7 @@ textarea:valid {
     width: 100%;
     margin-top: 1em;
     transition: all 0.3s ease;
+    border: none;
 }
 
 #btn-submit:hover {
