@@ -4,6 +4,7 @@
     box-sizing: border-box;
     --green: #92FE9D;
     --blue: #00C9FF;
+    --red: #D32F2F;
     font-size: 1em;
 }
 
@@ -64,7 +65,7 @@ textarea:focus {
 
 input:invalid,
 textarea:invalid {
-    border-bottom: 2px solid #D32F2F;
+    border-bottom: 2px solid var(--red);
 }
 
 input:valid,
@@ -78,7 +79,7 @@ textarea:valid {
 
 .chk-group {
     padding-bottom: 1em;
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--red);
 }
 
 .chk-group .label {
@@ -100,7 +101,7 @@ textarea:valid {
 }
 
 .btn-submit {
-    background: var(--blue);
+    background: var(--green);
     color: black;
     font-weight: bold;
     text-transform: uppercase;
@@ -114,4 +115,9 @@ textarea:valid {
 .btn-submit:hover {
     color: white;
     background: #1976D2;
+}
+
+.btn-submit:disabled{
+    background-color: var(--red);
+    color: white;
 }
