@@ -14,3 +14,20 @@ for (const input of checkboxes) {
         }
     });
 }
+
+const ladas = {
+    311: ['Tepic', 'Xalisco'],
+    319: ['Del Nayar', 'Rosamorada', 'Ruiz', 'Tuxpan'],
+    322: ['Bahia de Banderas'],
+    323: ['San Blas', 'Santiago Ixcuintla'],
+    324: ['Ahuacatlan', 'Amatlan de Cañas', 'Jala'],
+    325: ['Acaponeta', 'Huajicori'],
+    327: ['Compostela', 'San Blas', 'San Pedro Lagunillas', 'Santa Maria del Oro'],
+    329: ['Bahia de Banderas'],
+    389: ['Tecuala'],
+    347: ['La Yesca']
+};
+
+for (const lada in ladas) {
+    console.log(lada + ladas[lada])
+}
