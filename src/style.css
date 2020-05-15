@@ -12,6 +12,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.titulo {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    background: linear-gradient(90deg, var(--blue), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
 .contenedor-formulario {
     width: 100%;
     color: #f2f2f2;
@@ -35,7 +45,8 @@ body {
     margin-top: 1em;
 }
 
-input {
+input,
+textarea {
     font-size: 1em;
     text-transform: none;
     width: 100%;
@@ -45,23 +56,26 @@ input {
     transition-duration: .2s;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
     font-size: 1.2em;
 }
 
-input:invalid {
+input:invalid,
+textarea:invalid {
     border-bottom: 2px solid #D32F2F;
 }
 
-input:valid {
+input:valid,
+textarea:valid {
     border-bottom: 2px solid var(--green);
 }
 
 .label {
     color: #919191;
     transition: all 0.3s ease;
-    /* margin-left: .5em; */
+    text-transform: uppercase;
     font-size: .825em;
 }
 
