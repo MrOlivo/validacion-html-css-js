@@ -28,12 +28,6 @@ const ladas = {
     347: ['La Yesca']
 };
 
-for (const lada in ladas) {
-    ladas[lada].forEach(element => {
-        console.log(element);
-    });
-}
-
 const cargar_ladas = () => {
     let option;
     for (const lada in ladas) {
