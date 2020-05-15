@@ -1,3 +1,63 @@
 body {
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+}
+
+input, textarea {
+    font-size: 1.25em;
+    padding: 1%;
+    font-weight: 600;
+}
+
+input::placeholder{
+    text-transform: capitalize;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.elemento {
+    margin: .5em 0;
+}
+
+.wght-600{
+    font-weight: 600;
+}
+
+.app {
+    background-color: white;
+    /* margin: .5em; */
+    width: 500px;
+}
+
+.formulario {
+    margin: 1em;
+}
+
+.titulo {
+    background-color: #00C9FF;
+    padding: .5em;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
 }
