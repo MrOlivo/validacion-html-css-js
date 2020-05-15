@@ -100,6 +100,10 @@ textarea:valid {
     display: block;
 }
 
+.opc {
+    text-transform: lowercase;
+}
+
 #btn-submit {
     background: var(--green);
     color: black;
