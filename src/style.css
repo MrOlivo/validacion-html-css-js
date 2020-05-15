@@ -47,7 +47,8 @@ body {
 }
 
 input,
-textarea {
+textarea,
+select {
     font-size: 1em;
     text-transform: none;
     width: 100%;
@@ -55,16 +56,18 @@ textarea {
     border: none;
     border-bottom: 2px solid var(--blue);
     transition-duration: .2s;
+    border-radius: none;
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: none;
     font-size: 1.2em;
 }
 
 input:invalid,
-textarea:invalid {
+textarea:invalid{
     border-bottom: 2px solid var(--red);
 }
 
@@ -104,6 +107,11 @@ textarea:valid {
     text-transform: lowercase;
 }
 
+#lada {
+    width: 100%;
+    max-width: 500px;
+}
+
 #btn-submit {
     background: var(--green);
     color: black;
@@ -121,7 +129,7 @@ textarea:valid {
     background: #1976D2;
 }
 
-#btn-submit:disabled{
+#btn-submit:disabled {
     background-color: var(--red);
     color: white;
 }

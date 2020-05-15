@@ -33,3 +33,15 @@ for (const lada in ladas) {
         console.log(element);
     });
 }
+
+const cargar_ladas = () => {
+    let option;
+    for (const lada in ladas) {
+        option = document.createElement('option');
+        option.value = lada;
+        option.textContent = `+${lada} ${ladas[lada]}`;
+        document.querySelector('#lada').appendChild(option);
+    }
+};
+
+cargar_ladas();
