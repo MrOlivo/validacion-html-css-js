@@ -8,7 +8,8 @@
 }
 
 body {
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+    background-color: gray;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -18,13 +19,13 @@ body {
     text-align: center;
     background: linear-gradient(90deg, var(--blue), var(--green));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
 
 .contenedor-formulario {
     width: 100%;
-    color: #f2f2f2;
     padding: 50px;
 }
 
@@ -43,6 +44,10 @@ body {
 
 .input-group {
     margin-top: 1em;
+}
+
+.chkbox{
+    width: inherit;
 }
 
 input,
@@ -76,7 +81,8 @@ textarea:valid {
     color: #919191;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    font-size: .825em;
+    font-size: .8em;
+    display: block;
 }
 
 .btn-submit {
