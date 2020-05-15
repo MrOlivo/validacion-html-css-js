@@ -42,32 +42,32 @@
                     <input type="text" name="postal" id="postal" placeholder="Código Postal" minlength="5" size="5">
                 </div>
 
-                <div class="input-group chk-group" onclick="return ValidatePetSelection();">
+                <div class="input-group chk-group">
                     <label class="label">Unidades de Aprendizaje</label>
                     <div class="unidad">
-                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua0">
+                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua0" onclick="validate()">
                         <label for="ua0">Programacion</label>
                     </div>
                     <div class="unidad">
-                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua1">
+                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua1" onclick="validate()">
                         <label for="ua1">Álgebra Lineal</label>
                     </div>
                     <div class="unidad">
-                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua2">
+                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua2" onclick="validate()">
                         <label for="ua2">Cálculo Integral</label>
                     </div>
                     <div class="unidad">
-                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua3">
+                        <input type="checkbox" name="unidades" class="chkbox" value="" id="ua3" onclick="validate()">
                         <label for="ua3">Cálculo Diferencial</label>
                     </div>
                 </div>
 
                 <div class="input-group">
-                    <label for="problema" class="label">Describe tu problematica</label>
-                    <textarea name="problema" id="problema" rows="4" maxlength="60"></textarea>
+                    <label for="problema" class="label"">Describe tu problematica</label>
+                    <textarea name="problema" id="problema" rows="4" maxlength="60" required></textarea>
                 </div>
 
-                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="submit" class="btn-submit" disabled>Enviar</button>
             </form>
         </div>
     </div>
