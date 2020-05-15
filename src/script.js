@@ -29,5 +29,7 @@ const ladas = {
 };
 
 for (const lada in ladas) {
-    console.log(lada + ladas[lada])
+    ladas[lada].forEach(element => {
+        console.log(element);
+    });
 }
