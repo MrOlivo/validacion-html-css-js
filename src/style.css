@@ -18,9 +18,8 @@ label {
 }
 
 input, textarea {
-    font-size: 1.25em;
-    padding: 1%;
-    font-weight: 600;
+    font-size: 1.2em;
+    /* font-weight: 600; */
 }
 
 input::placeholder{
@@ -36,7 +35,7 @@ input:invalid {
 }
 
 .elemento {
-    margin: .5em 0;
+    margin: .5em auto;
 }
 
 .wght-600{
@@ -45,12 +44,14 @@ input:invalid {
 
 .app {
     background-color: white;
-    /* margin: .5em; */
-    width: 500px;
+    /* width: 500px; */
 }
 
 .formulario {
     margin: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .titulo {
@@ -60,4 +61,8 @@ input:invalid {
     text-transform: uppercase;
     text-align: center;
     color: white;
+}
+
+.checkboxes > label {
+    display: inline-block;
 }
