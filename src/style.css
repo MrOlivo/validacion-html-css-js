@@ -100,7 +100,7 @@ textarea:valid {
     display: block;
 }
 
-.btn-submit {
+#btn-submit {
     background: var(--green);
     color: black;
     font-weight: bold;
@@ -112,12 +112,12 @@ textarea:valid {
     transition: all 0.3s ease;
 }
 
-.btn-submit:hover {
+#btn-submit:hover {
     color: white;
     background: #1976D2;
 }
 
-.btn-submit:disabled{
+#btn-submit:disabled{
     background-color: var(--red);
     color: white;
 }
