@@ -35,20 +35,25 @@ body {
 input {
     font-size: 1em;
     text-transform: none;
-    color: var(--blue);
+    /* color: var(--blue); */
     width: 100%;
     padding: 1em;
     border: none;
     border-bottom: 2px solid var(--blue);
+    transition-duration: .2s;
 }
 
-input:focus{
+input:focus {
     outline: none;
-    border-bottom: 2px solid var(--green);
+    font-size: 1.2em;
 }
 
-input:invalid{
+input:invalid {
     border-bottom: 2px solid #D32F2F;
+}
+
+input:valid {
+    border-bottom: 2px solid var(--green);
 }
 
 .label {
@@ -58,7 +63,7 @@ input:invalid{
     font-size: .825em;
 }
 
-.btn-submit{
+.btn-submit {
     background: var(--blue);
     color: black;
     font-weight: 700;
