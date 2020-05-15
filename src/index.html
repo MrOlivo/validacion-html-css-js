@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validaciones</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <div>
+    <div class="app">
+        <div class="titulo">
+            <h1>Formulario de contacto</h1>
+        </div>
         <form action="" class="formulario">
+            <div class="elemento">
+                <label for="matricula">Matricula</label>
+                <input type="number" name="matricula" id="matricula" placeholder="Matricula" minlength="8"
+                    maxlength="8">
+            </div>
+
+            <div class="elemento">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" pattern="" required>
+            </div>
+
+            <div class="elemento">
+                <label for="correo">Email</label>
+                <input type="email" name="correo" id="correo" placeholder="correo electronico" required>
+            </div>
+
+            <div class="elemento">
+                <label for="grupo">Grupo</label>
+                <input type="text" name="grupo" id="grupo" placeholder="grupo" required>
+            </div>
+
+            <div class="elemento">
+                <label for="telefono">Número de telefono</label>
+                <input type="number" name="telefono" id="telefono" placeholder="telefono" required>
+            </div>
+            <div class="elemento">
+                <label for="codigo-postal">C.P.</label>
+                <input type="number" name="codigo-postal" id="postal" placeholder="codigo postal" minlength="5" maxlength="5">
+            </div>
+            <div class="elemento">
+                <label for="unidad">Unidad de aprendizaje</label>
+                <input type="checkbox" name="unidad[]">Unidad de aprendizaje <br>
+                <input type="checkbox" name="unidad[]">Unidad de aprendizaje <br>
+                <input type="checkbox" name="unidad[]">Unidad de aprendizaje <br>
+                <input type="checkbox" name="unidad[]">Unidad de aprendizaje <br>
+            </div>
+            <div class="elemento">
+                <label for="problema">Describe tu problema</label>
+                <textarea name="problema" cols="30" rows="4" maxlength="60" required></textarea>
+            </div>
 
         </form>
     </div>
 </body>
+
 </html>
