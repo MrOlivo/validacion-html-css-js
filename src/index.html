@@ -13,6 +13,9 @@
 <body>
     <div class="contenedor-formulario">
         <div class="wrap">
+            <div>
+                <h1 class="titulo">formulario de contacto</h1>
+            </div>
             <form action="" class="formulario">
                 <div class="input-group">
                     <label class="label" for="matricula">Matricula</label>
@@ -31,12 +34,17 @@
 
                 <div class="input-group">
                     <label for="grupo" class="label">Grupo</label>
-                    <input type="text" name="grupo" id="grupo" required>
+                    <input type="text" name="grupo" id="grupo" placeholder="Grupo al que Perteneces" required>
                 </div>
 
                 <div class="input-group">
                     <label for="postal" class="label">Código Postal</label>
-                    <input type="text" name="postal" id="postal" minlength="5" size="5">
+                    <input type="text" name="postal" id="postal" placeholder="Código Postal" minlength="5" size="5">
+                </div>
+
+                <div class="input-group">
+                    <label for="problema" class="label">Describe tu problematica</label>
+                    <textarea name="problema" id="problema" rows="4" maxlength="60"></textarea>
                 </div>
 
                 <button type="submit" class="btn-submit">Enviar</button>
