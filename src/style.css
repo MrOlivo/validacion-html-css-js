@@ -8,8 +8,7 @@
 }
 
 body {
-    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
-    background-color: gray;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -46,10 +45,6 @@ body {
     margin-top: 1em;
 }
 
-.chkbox{
-    width: inherit;
-}
-
 input,
 textarea {
     font-size: 1em;
@@ -77,6 +72,25 @@ textarea:valid {
     border-bottom: 2px solid var(--green);
 }
 
+.chkbox {
+    width: inherit;
+}
+
+.chk-group {
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--blue);
+}
+
+.chk-group .label {
+    padding-bottom: .5em;
+}
+
+.unidad {
+    font-family: sans-serif;
+    margin: .25em;
+    color: gray;
+}
+
 .label {
     color: #919191;
     transition: all 0.3s ease;
@@ -88,7 +102,7 @@ textarea:valid {
 .btn-submit {
     background: var(--blue);
     color: black;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
     padding: 1em;
