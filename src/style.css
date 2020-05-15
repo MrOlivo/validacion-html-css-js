@@ -31,11 +31,13 @@ body {
     margin: auto;
 }
 
+.input-group {
+    margin-top: 1em;
+}
 
 input {
     font-size: 1em;
     text-transform: none;
-    /* color: var(--blue); */
     width: 100%;
     padding: 1em;
     border: none;
@@ -59,7 +61,7 @@ input:valid {
 .label {
     color: #919191;
     transition: all 0.3s ease;
-    margin-left: 1em;
+    /* margin-left: .5em; */
     font-size: .825em;
 }
 
