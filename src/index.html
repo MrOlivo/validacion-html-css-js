@@ -6,61 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validaciones</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="app">
-        <div class="titulo">
-            <h1>Formulario de contacto</h1>
+    <div class="contenedor-formulario">
+        <div class="wrap">
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <label class="label" for="matricula">Matricula</label>
+                    <input type="number" name="matricula" id="matricula" placeholder="Matricula" minlength="8" maxlength="8">
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="nombre">Nombre completo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" pattern="" required>
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo Electronico" required>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
         </div>
-        <form action="" class="formulario">
-            <div class="elemento">
-                <label for="matricula">Matricula</label>
-                <input type="number" name="matricula" id="matricula" placeholder="Matricula" minlength="8"
-                    maxlength="8">
-            </div>
-
-            <div class="elemento">
-                <label for="nombre">Nombre completo</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" pattern="" required>
-            </div>
-
-            <div class="elemento">
-                <label for="correo">Email</label>
-                <input type="email" name="correo" id="correo" placeholder="correo electronico" required>
-            </div>
-
-            <div class="elemento">
-                <label for="grupo">Grupo</label>
-                <input type="text" name="grupo" id="grupo" placeholder="grupo" required>
-            </div>
-
-            <div class="elemento">
-                <label for="telefono">Número de telefono</label>
-                <input type="number" name="telefono" id="telefono" placeholder="telefono" required>
-            </div>
-            <div class="elemento">
-                <label for="codigo-postal">C.P.</label>
-                <input type="number" name="codigo-postal" id="postal" placeholder="codigo postal" minlength="5"
-                    maxlength="5">
-            </div>
-            <div class="elemento checkboxes">
-                <div><span>Unidades de Aprendizaje</span></div>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have a bike</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> I have a car</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                <label for="vehicle3"> I have a boat</label><br>
-            </div>
-            <div class="elemento">
-                <label for="problema">Describe tu problema</label>
-                <textarea name="problema" rows="4" maxlength="60" required></textarea>
-            </div>
-
-        </form>
     </div>
 </body>
 

@@ -1,68 +1,76 @@
-body {
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
+* {
     margin: 0;
-    font-size: 1.5em;
-}
-
-label {
-    display: block;
+    padding: 0;
+    box-sizing: border-box;
+    --green: #92FE9D;
+    --blue: #00C9FF;
     font-size: 1em;
 }
 
-input, textarea {
-    font-size: 1.2em;
-    /* font-weight: 600; */
+body {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: 'Raleway', sans-serif;
 }
 
-input::placeholder{
-    text-transform: capitalize;
+.contenedor-formulario {
+    width: 100%;
+    color: #f2f2f2;
+    padding: 50px;
 }
 
-input:valid {
-    border: 1px solid green;
-}
-
-input:invalid {
-    border: 1px solid red;
-}
-
-.elemento {
-    margin: .5em auto;
-}
-
-.wght-600{
-    font-weight: 600;
-}
-
-.app {
-    background-color: white;
-    /* width: 500px; */
+.wrap {
+    width: 90%;
+    max-width: 500px;
+    padding: 3em;
+    margin: auto;
+    background: #fff;
 }
 
 .formulario {
-    margin: 1em;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    width: 100%;
+    margin: auto;
 }
 
-.titulo {
-    background-color: #00C9FF;
-    padding: .5em;
-    margin: 0;
+
+input {
+    font-size: 1em;
+    text-transform: none;
+    color: var(--blue);
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-bottom: 2px solid var(--blue);
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--green);
+}
+
+input:invalid{
+    border-bottom: 2px solid #D32F2F;
+}
+
+.label {
+    color: #919191;
+    transition: all 0.3s ease;
+    margin-left: 1em;
+    font-size: .825em;
+}
+
+.btn-submit{
+    background: var(--blue);
+    color: black;
+    font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
-    color: white;
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+    margin-top: 1em;
+    transition: all 0.3s ease;
 }
 
-.checkboxes > label {
-    display: inline-block;
+.btn-submit:hover {
+    color: white;
+    background: #1976D2;
 }
