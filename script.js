@@ -1,12 +1,12 @@
 //  Validar que la selección de unidades de aprendizaje
 const checkboxes = document.getElementsByName("unidades");
 
-for (const input of checkboxes) {
-    input.addEventListener('click', () => {
+for (const checkbox of checkboxes) {
+    checkbox.addEventListener('click', () => {
         let activos = false;
 
-        checkboxes.forEach(input => {
-            if (input.checked) {
+        checkboxes.forEach(el => {
+            if (el.checked) {
                 activos = true;
             }
         });
