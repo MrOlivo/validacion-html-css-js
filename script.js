@@ -55,3 +55,15 @@ selector.addEventListener('click', () => {
 });
 
 //  Validar todo UmU
+let input_telefono = document.getElementById('telefono');
+
+input_telefono.addEventListener('keyup', () => {
+    let selector = document.getElementById('lada');
+    let valor = input_telefono.value;
+
+    if (selector.value == valor.substring(0, 3) && valor.length === 10 && selector.value !== '') {
+        input_telefono.setAttribute('style', 'border-bottom: 2px solid #92FE9D');
+    } else {
+        input_telefono.setAttribute('style', 'border-bottom: 2px solid #D32F2F');
+    }
+});
