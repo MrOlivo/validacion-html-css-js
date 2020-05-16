@@ -15,6 +15,8 @@ for (const input of checkboxes) {
     });
 }
 
+
+//  Ladas telefónicas
 const ladas = {
     311: ['Tepic', 'Xalisco'],
     319: ['Del Nayar', 'Rosamorada', 'Ruiz', 'Tuxpan'],
@@ -39,3 +41,15 @@ const cargar_ladas = () => {
 };
 
 cargar_ladas();
+
+//  Selección
+let selector = document.getElementById('lada');
+selector.addEventListener('click', () => {
+    let input_telefono = document.getElementById('telefono');
+    if (selector.value == "") {
+        selector.setAttribute('style', 'border-bottom: 2px solid #D32F2F');
+    } else {
+        input_telefono.value = selector.value;
+        selector.setAttribute('style', 'border-bottom: 2px solid #92FE9D');
+    }
+});
