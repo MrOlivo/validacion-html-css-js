@@ -18,7 +18,7 @@
             <form action="" class="formulario">
                 <div class="input-group">
                     <label class="label" for="matricula">Matricula<span class="opc"> (opcional)</span></label>
-                    <input type="text" name="matricula" id="matricula" placeholder="Matricula" pattern="[0-9]" minlength="8" maxlength="8">
+                    <input type="text" name="matricula" id="matricula" placeholder="Matricula" pattern="[0-9]{8}" maxlength="8">
                 </div>
 
                 <div class="input-group">
@@ -42,12 +42,12 @@
                         <option value="">Seleccione una por favor</option>
                     </select>
                     <label for="telefono" class="label" style="margin-top: 1em;">Télefono</label>
-                    <input type="number" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]" minlength="10" maxlength="10" required>
+                    <input type="text" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}" maxlength="10" required>
                 </div>
 
                 <div class="input-group">
                     <label for="postal" class="label">Código Postal<span class="opc"> (opcional)</span></label>
-                    <input type="text" name="postal" id="postal" placeholder="Código Postal" minlength="5" maxlength="5" pattern="[0-9]">
+                    <input type="text" name="postal" id="postal" placeholder="Código Postal" pattern="[0-9]{5}" maxlength="5">
                 </div>
 
                 <div class="input-group chk-group">
