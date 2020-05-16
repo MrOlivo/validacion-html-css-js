@@ -11,4 +11,4 @@ Los requerimientos y validaciones que debe llevar tu formulario son:
 7.  Selección de Unidad de Aprendizaje o unidades, a través de campos de tipo checkbox. **Una es obligatoria**, ***dos o más opcional***.
 8.  La descripción del problema en un campo de texto de 4 renglones y 60 caracteres. **Obligatorio**.
 
-Incluya tanto elementos de validación con **HTML5**, **CSS** y **JavaScript**
+Incluya tanto elementos de validación con **HTML5**, **CSS** y **JavaScript**. Click aqui para ir al sitio.
