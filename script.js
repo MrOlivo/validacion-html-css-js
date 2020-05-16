@@ -1,3 +1,4 @@
+//  Validar que la selección de unidades de aprendizaje
 const checkboxes = document.getElementsByName("unidades");
 
 for (const input of checkboxes) {
