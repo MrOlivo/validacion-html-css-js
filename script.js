@@ -2,19 +2,23 @@ const checkboxes = document.getElementsByName("unidades");
 
 for (const input of checkboxes) {
     input.addEventListener('click', () => {
-        const chk_group = document.getElementsByClassName('chk-group')[0];
-        const btn_submit = document.getElementById('btn-submit');
+        let activos = false;
 
-        if (input.checked) {
-            chk_group.setAttribute('style', 'border-bottom: 2px solid #92FE9D');
-            btn_submit.removeAttribute('disabled');
+        checkboxes.forEach(input => {
+            if (input.checked) {
+                activos = true;
+            }
+        });
+
+        if (activos) {
+            document.querySelector('.chk-group').setAttribute('style', 'border-bottom: 2px solid #92FE9D');
+            document.getElementById('btn-submit').removeAttribute('disabled');
         } else {
-            chk_group.removeAttribute('style');
-            btn_submit.setAttribute('disabled', '');
+            document.querySelector('.chk-group').removeAttribute('style');
+            document.getElementById('btn-submit').setAttribute('disabled', '');
         }
     });
 }
-
 
 //  Ladas telefónicas
 const ladas = {
@@ -54,7 +58,7 @@ selector.addEventListener('click', () => {
     }
 });
 
-//  Validar todo UmU
+//  Validar número telefónico UmU
 let input_telefono = document.getElementById('telefono');
 
 input_telefono.addEventListener('keyup', () => {
