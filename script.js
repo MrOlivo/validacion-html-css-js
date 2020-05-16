@@ -42,7 +42,7 @@ const cargar_ladas = () => {
 
 cargar_ladas();
 
-//  Selección
+//  Selección de lada y cambio del Selector al Input de Télefono
 let selector = document.getElementById('lada');
 selector.addEventListener('click', () => {
     let input_telefono = document.getElementById('telefono');
@@ -53,3 +53,5 @@ selector.addEventListener('click', () => {
         selector.setAttribute('style', 'border-bottom: 2px solid #92FE9D');
     }
 });
+
+//  Validar todo UmU
