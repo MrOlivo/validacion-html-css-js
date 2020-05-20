@@ -24,30 +24,30 @@
                 </div>
 
                 <div class="input-group">
-                    <label class="label" for="nombre">Nombre completo</label>
+                    <label class="label" for="nombre">Nombre completo<span class="opc"> (obligatoria)</span></label>
                     <input type="text" title="Generalmente los nombres no llevan numeros" name="nombre" id="nombre"
                         placeholder="Ingresa tu Nombre" required>
                 </div>
 
                 <div class="input-group">
-                    <label class="label" for="correo">Email</label>
+                    <label class="label" for="correo">Email<span class="opc"> (obligatoria)</span></label>
                     <input type="email" title="Ingrese su email ex. john.doe@gmail.com" name="correo" id="correo"
                         placeholder="Correo Electronico"
                         pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="grupo" class="label">Grupo</label>
+                    <label for="grupo" class="label">Grupo<span class="opc"> (obligatoria)</span></label>
                     <input type="text" name="grupo" id="grupo" placeholder="Grupo al que Perteneces" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="lada" class="label">Lada Telefónica</label>
-                    <select name="lada" id="lada">
+                    <label for="municipio" class="label">Municipio<span class="opc"> (obligatoria)</span></label>
+                    <select name="municipio" id="municipio">
                         <option value="">Seleccione una por favor</option>
                     </select>
-                    <label for="telefono" class="label" style="margin-top: 1em;">Télefono</label>
-                    <input type="text" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}"
+                    <label for="telefono" class="label" style="margin-top: 1em;">Télefono<span class="opc"> (obligatoria)</span></label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}"
                         maxlength="10" required>
                 </div>
 
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="input-group chk-group">
-                    <label class="label">Unidades de Aprendizaje</label>
+                    <label class="label">Unidades de Aprendizaje<span class="opc"> (obligatoria)</span></label>
                     <div class="unidad">
                         <input type="checkbox" name="unidades" class="chkbox" value="" id="ua0">
                         <label for="ua0">Programacion</label>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="problema" class="label"">Describe tu problematica</label>
+                    <label for="problema" class="label"">Describe tu problematica<span class="opc"> (obligatoria)</span></label>
                     <textarea name=" problema" id="problema" title="ex. No tengo internet en casa :carita-triste:"
                         rows="4" maxlength="60" required></textarea>
                 </div>
