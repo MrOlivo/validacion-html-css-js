@@ -1,3 +1,6 @@
+const chk_group = document.querySelector('.chk-group');
+const btn_submit = document.getElementById('btn-submit');
+
 //  Validar que la selección de unidades de aprendizaje
 const checkboxes = document.getElementsByName('unidades');
 
@@ -12,11 +15,11 @@ for (const checkbox of checkboxes) {
         });
 
         if (activos) {
-            document.querySelector('.chk-group').setAttribute('style', 'border-bottom: 2px solid #92FE9D');
-            document.getElementById('btn-submit').removeAttribute('disabled');
+            chk_group.setAttribute('style', 'border-bottom: 2px solid #92FE9D');
+            btn_submit.removeAttribute('disabled');
         } else {
-            document.querySelector('.chk-group').removeAttribute('style');
-            document.getElementById('btn-submit').setAttribute('disabled', '');
+            chk_group.removeAttribute('style');
+            btn_submit.setAttribute('disabled', '');
         }
     });
 }
@@ -45,6 +48,7 @@ const ladas = {
     19: ['311', 'Xalisco']
 };
 
+//  Crear option de municipio y sus ladas
 const cargar_ladas = () => {
     let option;
     const municipio = document.querySelector('#municipio')
@@ -59,18 +63,29 @@ const cargar_ladas = () => {
 
 cargar_ladas();
 
-//
-
 //  Validar número telefónico
-let input_telefono = document.getElementById('telefono');
 
-input_telefono.addEventListener('keyup', () => {
+const validar_telefono = () => {
+    let input_telefono = document.getElementById('telefono');
     let selector = document.getElementById('municipio');
     let valor = input_telefono.value;
 
-    if (selector.value == valor.substring(0, 3) && valor.length === 10 && selector.value !== '') {
-        input_telefono.setAttribute('style', 'border-bottom: 2px solid #92FE9D');   //  Verde
+    if (selector.value == valor.substring(0, 3) && valor.length === 10 && selector.value != '') {
+        input_telefono.setAttribute('style', 'border-bottom: 2px solid #92FE9D'); //  Verde
+        return true;
     } else {
-        input_telefono.setAttribute('style', 'border-bottom: 2px solid #D32F2F');   //  Rojo
+        input_telefono.setAttribute('style', 'border-bottom: 2px solid #D32F2F'); //  Rojo
+        btn_submit.focus();
+        alert('Tu municipio no coincide con la lada o no has selecionado uno');
+        return false;
     }
-});
+};
+
+const validar_municipio = () => {
+    let selector = document.getElementById('municipio');
+    return !(selector.value === '');
+};
+
+const validacion_final = () => {
+    return (validar_telefono() && validar_municipio());
+};
