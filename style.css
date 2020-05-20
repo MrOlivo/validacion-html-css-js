@@ -103,7 +103,7 @@ textarea:valid {
 }
 
 .opc{
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
 #lada {
