@@ -35,3 +35,5 @@ design/*.xd
 src/estilos.css
 *.json
 node_modules/
+*.html
+!index.html
