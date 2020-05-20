@@ -32,7 +32,7 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/macos
 design/*.xd
-src/estilos.css
+estilos.css
 *.json
 node_modules/
 *.html
