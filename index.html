@@ -14,9 +14,9 @@
     <div class="contenedor-formulario">
         <div class="wrap">
             <div>
-                <h1 class="titulo">formulario de contacto</h1>
+                <h1 class="titulo">formulario para estudiantes</h1>
             </div>
-            <form action="" class="formulario">
+            <form action="action.js" class="formulario" onsubmit="return validacion_final()">
                 <div class="input-group">
                     <label class="label" for="matricula">Matricula<span class="opc"> (opcional)</span></label>
                     <input type="text" title="Ingrese ocho números ex. 12403989" name="matricula" id="matricula"
@@ -46,9 +46,11 @@
                     <select name="municipio" id="municipio">
                         <option value="">Seleccione una por favor</option>
                     </select>
-                    <label for="telefono" class="label" style="margin-top: 1em;">Télefono<span class="opc"> (obligatoria)</span></label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}"
-                        maxlength="10" required>
+                    <label for="telefono" class="label" style="margin-top: 1em;">Télefono<span class="opc">
+                            (obligatoria)</span></label>
+                    <input type="tel" title="LADA 3 digitos + NÚMERO 7 digitos y no debe contener letras"
+                        name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}" maxlength="10"
+                        required>
                 </div>
 
                 <div class="input-group">
@@ -78,7 +80,8 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="problema" class="label"">Describe tu problematica<span class="opc"> (obligatoria)</span></label>
+                    <label for="problema" class="label"">Describe tu problematica<span class=" opc">
+                        (obligatoria)</span></label>
                     <textarea name=" problema" id="problema" title="ex. No tengo internet en casa :carita-triste:"
                         rows="4" maxlength="60" required></textarea>
                 </div>
@@ -86,9 +89,6 @@
                 <button type="submit" id="btn-submit" title="Si esta en rojo es porque has olvidado algún dato."
                     disabled>Enviar</button>
             </form>
-            <div class="label" style="padding-top: 1em;">Iconos diseñados por <a
-                    href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a
-                    href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         </div>
     </div>
     <script src="script.js"></script>
