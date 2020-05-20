@@ -19,17 +19,21 @@
             <form action="" class="formulario">
                 <div class="input-group">
                     <label class="label" for="matricula">Matricula<span class="opc"> (opcional)</span></label>
-                    <input type="text" title="Ingrese ocho números ex. 12403989" name="matricula" id="matricula" placeholder="Matricula" pattern="[0-9]{8}" maxlength="8">
+                    <input type="text" title="Ingrese ocho números ex. 12403989" name="matricula" id="matricula"
+                        placeholder="Matricula" pattern="[0-9]{8}" maxlength="8">
                 </div>
 
                 <div class="input-group">
                     <label class="label" for="nombre">Nombre completo</label>
-                    <input type="text" title="Generalmente los nombres no llevan numeros" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" required>
+                    <input type="text" title="Generalmente los nombres no llevan numeros" name="nombre" id="nombre"
+                        placeholder="Ingresa tu Nombre" required>
                 </div>
 
                 <div class="input-group">
                     <label class="label" for="correo">Email</label>
-                    <input type="email" title="Ingrese su email ex. john.doe@gmail.com" name="correo" id="correo" placeholder="Correo Electronico" required>
+                    <input type="email" title="Ingrese su email ex. john.doe@gmail.com" name="correo" id="correo"
+                        placeholder="Correo Electronico"
+                        pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
                 </div>
 
                 <div class="input-group">
@@ -43,12 +47,14 @@
                         <option value="">Seleccione una por favor</option>
                     </select>
                     <label for="telefono" class="label" style="margin-top: 1em;">Télefono</label>
-                    <input type="text" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}" maxlength="10" required>
+                    <input type="text" name="telefono" id="telefono" placeholder="Número telefónico" pattern="[0-9]{10}"
+                        maxlength="10" required>
                 </div>
 
                 <div class="input-group">
                     <label for="postal" class="label">Código Postal<span class="opc"> (opcional)</span></label>
-                    <input type="text" title="Ingrese cinco números ex. 63000" name="postal" id="postal" placeholder="Código Postal" pattern="[0-9]{5}" maxlength="5">
+                    <input type="text" title="Ingrese cinco números ex. 63000" name="postal" id="postal"
+                        placeholder="Código Postal" pattern="[0-9]{5}" maxlength="5">
                 </div>
 
                 <div class="input-group chk-group">
@@ -73,12 +79,16 @@
 
                 <div class="input-group">
                     <label for="problema" class="label"">Describe tu problematica</label>
-                    <textarea name="problema" id="problema"  title="ex. No tengo internet en casa :carita-triste:" rows="4" maxlength="60" required></textarea>
+                    <textarea name=" problema" id="problema" title="ex. No tengo internet en casa :carita-triste:"
+                        rows="4" maxlength="60" required></textarea>
                 </div>
 
-                <button type="submit" id="btn-submit" title="Si esta en rojo es porque has olvidado algún dato." disabled>Enviar</button>
+                <button type="submit" id="btn-submit" title="Si esta en rojo es porque has olvidado algún dato."
+                    disabled>Enviar</button>
             </form>
-            <div class="label" style="padding-top: 1em;">Iconos diseñados por <a href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+            <div class="label" style="padding-top: 1em;">Iconos diseñados por <a
+                    href="https://www.flaticon.es/autores/eucalyp" title="Eucalyp">Eucalyp</a> from <a
+                    href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         </div>
     </div>
     <script src="script.js"></script>
