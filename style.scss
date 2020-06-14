@@ -1,0 +1,137 @@
+$green: #92FE9D;
+$blue: #00C9FF;
+$blue-scy: #1976D2;
+$red: #D32F2F;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body {
+    background: linear-gradient(90deg, $blue 0%, $green 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+    background: linear-gradient(90deg, $blue, $green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    padding: 50px;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 500px;
+    padding: 3em;
+    margin: auto;
+    background: #fff;
+}
+
+.formulario {
+    width: 100%;
+    margin: auto;
+}
+
+.input-group {
+    margin-top: 1em;
+}
+
+input,
+textarea,
+select {
+    font-size: 1em;
+    text-transform: none;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-bottom: 2px solid $blue;
+    transition-duration: .2s;
+    border-radius: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+input:invalid,
+textarea:invalid {
+    border-bottom: 2px solid $red;
+}
+
+input:valid,
+textarea:valid {
+    border-bottom: 2px solid $green;
+}
+
+.chkbox {
+    width: inherit;
+}
+
+.chk-group {
+    padding-bottom: 1em;
+    border-bottom: 2px solid $red;
+
+    .label {
+        padding-bottom: .5em;
+    }
+}
+
+.unidad {
+    font-family: sans-serif;
+    margin: .25em;
+    color: gray;
+}
+
+.label {
+    color: #919191;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: .825em;
+    display: block;
+}
+
+.opc {
+    text-transform: capitalize;
+}
+
+#lada {
+    width: 100%;
+    max-width: 500px;
+}
+
+#btn-submit {
+    background: $green;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+    margin-top: 1em;
+    transition: all 0.3s ease;
+    border: none;
+
+    &:hover {
+        color: white;
+        background: $blue-scy;
+    }
+
+    &:disabled {
+        background-color: $red;
+        color: white;
+    }
+}
