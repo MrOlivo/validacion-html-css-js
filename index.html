@@ -10,11 +10,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="cuerpo">
     <div class="contenedor-formulario">
         <div class="wrap">
             <div>
                 <h1 class="titulo">formulario para estudiantes</h1>
+                <button id="generate">Generate random RGB value</button>
+                <div id="value">rgb(,,)</div>
             </div>
             <form action="action.js" class="formulario" onsubmit="return validacion_final()">
                 <div class="input-group">
@@ -84,6 +86,7 @@
         </div>
     </div>
     <script src="script-dist.js"></script>
+    <script src="random-color.js"></script>
 </body>
 
 </html>
